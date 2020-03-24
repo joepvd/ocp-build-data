@@ -35,7 +35,7 @@ build_profiles:
 default_image_build_profile: unsigned
 default_rpm_build_profile: default
 
-branch: rhaos-{MAJOR}.{MINOR}-rhel-7
+branch: private-jdelft-4.5
 name: openshift-{MAJOR}.{MINOR}
 urls:
   brewhub: https://brewhub.engineering.redhat.com/brewhub
