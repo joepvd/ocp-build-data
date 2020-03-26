@@ -311,3 +311,4 @@ scan_freshness:
   release_regex: '(?x) ^ (\d\d\d\d) (\d\d) (\d\d) (\d\d)'
   threshold_hours: 6
 csv_namespace: openshift
+brew_tag: rhaos-4.5-rhel-7-candidate # XXX
