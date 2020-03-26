@@ -31,3 +31,5 @@ labels:
 name: openshift/ose-console
 owners:
 - jdelft@redhat.com # XXX: while working on nodejs12 transition
+distgit:
+  branch: private-jdelft-4.5
