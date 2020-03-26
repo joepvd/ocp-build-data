@@ -23,9 +23,13 @@ build_profiles:
     unsigned:
       signing_intent: unsigned
       repo_type: unsigned
+      targets:
+      - rhaos-{MAJOR}.{MINOR}-rhel-7-candidate
     signed:
       signing_intent: release
       repo_type: signed
+      targets:
+      - rhaos-{MAJOR}.{MINOR}-rhel-7-candidate
   rpm:
     default:
       targets:
