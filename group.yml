@@ -8,6 +8,7 @@ arches:
 - x86_64
 - ppc64le
 - s390x
+- new_arch
 
 #arches_override:
 #- x86_64
