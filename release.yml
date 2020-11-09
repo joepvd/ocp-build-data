@@ -1,0 +1,9 @@
+4.6.3:
+  advisories:
+    rpm: 1234
+    image: 456
+    extras: 678
+  payload:
+    amd64: abc
+    s390x: def
+    ppc64le: niceness
