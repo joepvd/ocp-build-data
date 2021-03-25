@@ -81,7 +81,7 @@ repos:
   rhel-7-server-ansible-runner-1.2-rpms:
     conf:
       baseurl:
-        ppc64le: http://rhsm-pulp.corp.redhat.com/content/dist/rhel/server/7/7Server/ppc64le/ansible-runner/1.2/os/
+        ppc64le: http://rhsm-pulp.corp.redhat.com/content/dist/rhel/power-le/7/7Server/ppc64le/ansible-runner/1.2/os/
         x86_64: http://rhsm-pulp.corp.redhat.com/content/dist/rhel/server/7/7Server/x86_64/ansible-runner/1.2/os/
     content_set:
       default: rhel-7-server-ansible-runner-1.2-rpms
