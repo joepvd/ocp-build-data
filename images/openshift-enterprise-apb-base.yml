@@ -8,6 +8,7 @@ content:
     path: base-images/ansible-runner
 enabled_repos:
 - rhel-7-server-ansible-2.8-rpms
+- rhel-7-server-ansible-runner-1.2-rpms
 - rhel-server-extras-rpms
 - rhel-server-optional-rpms
 - rhel-server-ose-rpms-embargoed
