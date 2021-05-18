@@ -52,7 +52,7 @@ push:
 
 sources:
   ose:
-    url: git@github.com:openshift-priv/origin.git
+    url: git@github.com:joepvd/origin.git
     branch:
       target: release-{MAJOR}.{MINOR}
 
