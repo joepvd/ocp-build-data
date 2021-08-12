@@ -5,6 +5,10 @@ container_yaml:
 content:
   source:
     dockerfile: Dockerfile.ocp
+    modifications:
+    - action: replace
+      match: "GOPROXY=direct"
+      replacement: "GOPROXY=off"
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
