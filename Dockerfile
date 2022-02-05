@@ -7,5 +7,6 @@ FROM python
 USER root
 RUN echo 'skip_missing_names_on_install=0' >> /etc/yum.conf \
  && yum update -y  \
- && yum clean all
+ && yum clean all  \
+ && sed -i -e 's/rhel-8-for-x86_64-baseos-rpms/rhel-8-for-x86_64-baseos-eus-rpms__8_DOT_2/g' -e 's/rhel-8-for-x86_64-appstream-rpms/rhel-8-for-x86_64-appstream-eus-rpms__8_DOT_2/' /root/buildinfo/content_manifests/*.json
 USER 1001
