@@ -1,4 +1,7 @@
 releases:
+  test:
+    assembly:
+      type: custom
   4.6.56:
     assembly:
       basis:
