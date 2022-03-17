@@ -7,7 +7,7 @@ content:
       replacement: " pip3 "
     - action: replace
       match: "RUN pip"
-      replacement: "RUN yum install -y python3-pip && pip"
+      replacement: "RUN yum install -y python3-pip glibc-langpack-en && pip"
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
