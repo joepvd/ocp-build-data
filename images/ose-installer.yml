@@ -4,7 +4,7 @@ content:
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/installer.git
+      url: git@github.com:joepvd/installer.git
       web: https://github.com/openshift/installer
     ci_alignment:
       streams_prs:
