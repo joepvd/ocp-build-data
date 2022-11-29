@@ -7,6 +7,9 @@ content:
     modifications:
     - action: command
       command: rm .dockerignore
+    - action: replace
+      match: 'COPY . .'
+      replacement: 'COPY . .\nRUN find . -type f'
     git:
       branch:
         target: release-4.12-fix-skip-range
