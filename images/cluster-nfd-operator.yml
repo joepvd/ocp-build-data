@@ -4,6 +4,9 @@ mode: disabled
 content:
   source:
     dockerfile: Dockerfile
+    modifications:
+    - action: command
+      command: rm .dockerignore
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
