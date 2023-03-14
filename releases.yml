@@ -1094,3 +1094,21 @@ releases:
       permits:
       - code: OUTDATED_RPMS_IN_STREAM_BUILD
         component: 'ose-ovn-kubernetes'
+      members:
+        images:
+        - distgit_key: driver-toolkit
+          why: Get matching kernel to selected rhcos
+          metadata:
+            is:
+              nvr: driver-toolkit-container-v4.12.0-202303081116.p0.g6e5c04c.assembly.stream
+        rpms:
+        - distgit_key: kernel
+          why: Get matching kernel to selected rhcos
+          metadata:
+            is:
+              el8: kernel-4.18.0-372.46.1.el8_6
+        - distgit_key: kernel-rt
+          why: Get matching kernel to selected rhcos
+          metadata:
+            is:
+              el8: kernel-rt-4.18.0-372.46.1.rt7.203.el8_6
