@@ -17,6 +17,15 @@ releases:
           microshift: 115464
         release_jira: ART-7001
         upgrades: 4.12.16,4.12.17,4.12.18,4.12.19,4.12.20,4.12.21,4.13.0,4.13.1,4.13.2
+      issues:
+        exclude:
+        # These are microshift trackers, for which we do not yet have an attachable build.
+        # Excluding for now, until promote is underway
+        - id: OCPBUGS-12394
+        - id: OCPBUGS-12376
+        - id: OCPBUGS-13270
+        - id: OCPBUGS-12424
+        - id: OCPBUGS-12409
       members:
         images: []
         rpms: []
