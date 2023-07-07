@@ -3,26 +3,26 @@ content:
     dockerfile: build/Dockerfile.openshift
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/kubernetes-nmstate.git
+        target: rhel9
+      url: git@github.com:qinqon/kubernetes-nmstate.git
       web: https://github.com/openshift/kubernetes-nmstate
     ci_alignment:
       streams_prs:
         ci_build_root:
-          stream: rhel-8-golang-ci-build-root
+          stream: rhel-9-golang-ci-build-root
 dependents:
 - openshift-kubernetes-nmstate-operator # Disabled to wait for updated bundle dirs
 distgit:
   component: openshift-kubernetes-nmstate-handler-rhel-8-container
 enabled_repos:
-- rhel-8-baseos-rpms
-- rhel-8-appstream-rpms
-- rhel-8-server-ose-rpms-embargoed
+- rhel-9-baseos-rpms
+- rhel-9-appstream-rpms
+- rhel-9-server-ose-rpms-embargoed
 for_payload: false
 from:
   builder:
-  - stream: golang
-  member: openshift-enterprise-base
+  - stream: rhel-9-golang
+  member: openshift-enterprise-base-rhel9
 name: openshift/ose-kubernetes-nmstate-handler-rhel8
 name_in_bundle: kubernetes-nmstate-handler
 owners:
@@ -32,4 +32,4 @@ owners:
 - phoracek@redhat.com
 - yboaron@redhat.com
 non_shipping_repos:
-- rhel-8-server-ose-rpms-embargoed
+- rhel-9-server-ose-rpms-embargoed
