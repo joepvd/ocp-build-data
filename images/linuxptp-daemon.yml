@@ -7,8 +7,8 @@ content:
     dockerfile: Dockerfile.rhel7
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/linuxptp-daemon.git
+        target: cachito_update
+      url: git@github.com:nishant-parekh/linuxptp-daemon.git # XXX for testing purposes
       web: https://github.com/openshift/linuxptp-daemon
     ci_alignment:
       streams_prs:
