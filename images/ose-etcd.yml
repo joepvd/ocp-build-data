@@ -18,8 +18,8 @@ content:
     dockerfile: Dockerfile.art
     git:
       branch:
-        target: openshift-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/etcd.git
+        target: rebase_4.11_3.5.9
+      url: git@github.com:tjungblu/etcd.git
       web: https://github.com/openshift/etcd
     pkg_managers:
     - gomod
