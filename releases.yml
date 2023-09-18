@@ -40,6 +40,21 @@ releases:
             x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:f57a6f586da3c79caf4989f9f219a6a93b529ea9235a3b85db280a537297eb49
       type: standard
 
+  art7779:
+    assembly:
+      basis:
+        assembly: 4.12.33
+      members:
+        images:
+        - distgit_key: ironic
+          why: "ART-7779"
+          metadata:
+            dependencies:
+              rpms:
+              - el9: openstack-ironic-21.0.1-0.20230915205544.56c3b7c.el9
+                non_gc_tag: rhaos-4.12-rhel-9-hotfix
+                why: ART-7779
+
   4.12.33:
     assembly:
       basis:
