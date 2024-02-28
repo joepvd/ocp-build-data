@@ -212,6 +212,8 @@ releases:
 
   stream:
     assembly:
+      basis:
+        brew_event: 56662799
       type: stream
       permits:
       - code: OUTDATED_RPMS_IN_STREAM_BUILD
