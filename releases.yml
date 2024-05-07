@@ -644,3 +644,24 @@ releases:
               exempt_rpms:
               - redhat-release*  # documents rhel release notes and concerns
               - tzdata
+        - distgit_key: ose-installer
+          why: Pin working build for nightly
+          metadata:
+            is:
+              nvr: ose-installer-container-v4.16.0-202405062116.p0.g419b435.assembly.stream.el9
+        - distgit_key: ose-installer-artifacts
+          why: Pin working build for nightly
+          metadata:
+            is:
+              nvr: ose-installer-artifacts-container-v4.16.0-202405062116.p0.g419b435.assembly.stream.el9
+        - distgit_key: ose-baremetal-installer
+          why: Pin working build for nightly
+          metadata:
+            is:
+              nvr: ose-baremetal-installer-container-v4.16.0-202405062116.p0.g419b435.assembly.stream.el9
+        - distgit_key: ose-installer-altinfra
+          why: Pin working build for nightly
+          metadata:
+            is:
+              nvr: ose-installer-altinfra-container-v4.16.0-202405062116.p0.g419b435.assembly.stream.el9
+
