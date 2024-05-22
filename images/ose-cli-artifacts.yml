@@ -21,7 +21,7 @@ for_payload: true
 from:
   builder:
   - stream: golang
-  - stream: rhel-9-golang
+  - stream: rhel-9-golang-1.22
   member: openshift-enterprise-cli
 name: openshift/ose-cli-artifacts-rhel9
 payload_name: cli-artifacts
