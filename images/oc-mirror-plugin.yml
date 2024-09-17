@@ -5,8 +5,8 @@ content:
     dockerfile: images/cli/Dockerfile.art
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/oc-mirror.git
+        target: art/fix-17092024
+      url: git@github.com:aguidirh/oc-mirror.git
       web: https://github.com/openshift/oc-mirror
     ci_alignment:
       streams_prs:
