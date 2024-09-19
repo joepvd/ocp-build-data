@@ -5,7 +5,7 @@ content:
     dockerfile: images/cli/Dockerfile.art
     git:
       branch:
-        target: art/fix-17092024
+        target: CLID-239
       url: git@github.com:aguidirh/oc-mirror.git
       web: https://github.com/openshift/oc-mirror
     ci_alignment:
