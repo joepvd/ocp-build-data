@@ -5,9 +5,9 @@ content:
     dockerfile: images/cli/Dockerfile.art
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/oc-mirror.git
-      web: https://github.com/openshift/oc-mirror
+        target: fix-build-machinery-go
+      url: git@github.com:r4f4/oc-mirror.git
+      web: https://github.com/r4f4/oc-mirror
     ci_alignment:
       streams_prs:
         ci_build_root:
