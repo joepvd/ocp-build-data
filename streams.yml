@@ -1,4 +1,15 @@
 ---
-rhel9:
+rhel8_6:
+  image: registry-proxy.engineering.redhat.com/rh-osbs/ubi8:8.6-754
+rhel8_10:
+  # ubi8-container-8.10-901.1717584420
+  image: registry-proxy.engineering.redhat.com/rh-osbs/ubi8@sha256:143123d85045df426c5bbafc6863659880ebe276eb02c77ee868b88d08dbd05d
+
+rhel9_0:
+  # rhel-els-container-9.0.0-974
+  image: registry-proxy.engineering.redhat.com/rh-osbs/rhel-els@sha256:c00fe5ad75658431c97b3a225db5625a97c8f3a28253af7ec3aa622db235ff64
+
+rhel9_4:
 # rhel-els-container-9.4-943.1726661131
   image: registry-proxy.engineering.redhat.com/rh-osbs/rhel-els@sha256:2aaaf576ca73226a6f00af0fd0f0f1e08d5f6a269d15f9b5305d3d5bde94d4f7
+

@@ -2,10 +2,10 @@ content:
   set_build_variables: false
   source:
     path: images
-    dockerfile: openshift-golang-builder.Dockerfile
+    dockerfile: openshift-golang-builder.rhel-9-golang-1-19.Dockerfile
     git:
       branch:
-        target: rhel-9-golang-1.23
+        target: golang
       url: git@github.com:openshift-eng/ocp-build-data.git
     modifications:
     - action: add
@@ -13,14 +13,16 @@ content:
       path: go_wrapper.sh
       overwriting: true
 enabled_repos:
-- rhel-9-baseos-rpms
 - rhel-9-golang-rpms
+- rhel-9.0-server-ose-build-rpms
+- rhel-9.0-baseos-rpms
 # for clang
-- rhel-9-appstream-rpms
-- rhel-9-codeready-builder-rpms
+- rhel-9.0-appstream-rpms
 
 from:
-  stream: rhel9
+  stream: rhel9_0
+
+image_build_method: osbs2
 
 labels:
   io.k8s.description: golang builder image for Red Hat internal builds
@@ -30,9 +32,8 @@ name: openshift/golang-builder
 owners:
 - aos-team-art@redhat.com
 
-# for CPaaS
 additional_tags:
-- 'rhel_9_golang_1.23'
-- 'rhel_9_1.23'
+- 'rhel_9_golang_1.19'
+- 'rhel_9_1.19'
 maintainer:
   component: Release

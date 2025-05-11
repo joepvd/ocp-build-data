@@ -1,0 +1,5 @@
+- distgit branches
+- brew targets
+- golang repos
+- figure out ci images.. 4.19+ is completely different from the rest..
+- Focus on getting 4.19+ right.

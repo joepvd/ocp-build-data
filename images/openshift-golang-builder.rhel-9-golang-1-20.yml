@@ -1,0 +1,38 @@
+content:
+  set_build_variables: false
+  source:
+    path: images
+    dockerfile: openshift-golang-builder.rhel-9-golang-1-20.Dockerfile
+    git:
+      branch:
+        target: golang
+      url: git@github.com:openshift-eng/ocp-build-data.git
+    modifications:
+    - action: add
+      doozer_source: golang_builder_FIPS_wrapper.sh
+      path: go_wrapper.sh
+      overwriting: true
+enabled_repos:
+- rhel-9-server-ose-build-rpms
+- rhel-9.0-baseos-rpms
+- rhel-9.0-golang-rpms
+# for clang
+- rhel-9.0-appstream-rpms
+
+from:
+  stream: rhel9_0
+
+labels:
+  io.k8s.description: golang builder image for Red Hat internal builds
+
+name: openshift/golang-builder
+
+owners:
+- aos-team-art@redhat.com
+
+# Don't add floating tag to FoD builder for now, until we confident CPASS can use it
+additional_tags:
+- 'rhel_9_golang_1.20'
+- 'rhel_9_1.20'
+maintainer:
+  component: Release

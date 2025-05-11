@@ -1,0 +1,37 @@
+content:
+  set_build_variables: false
+  source:
+    path: images
+    dockerfile: openshift-golang-builder.rhel-8-golang-1-19.Dockerfile
+    git:
+      branch:
+        target: golang
+      url: git@github.com:openshift-eng/ocp-build-data.git
+    modifications:
+    - action: add
+      doozer_source: golang_builder_FIPS_wrapper.sh
+      path: go_wrapper.sh
+      overwriting: true
+enabled_repos:
+- rhel-8-server-ose-build-rpms
+- rhel-8-golang-rpms
+- rhel-8.6-baseos-rpms
+# for clang
+- rhel-8.6-appstream-rpms
+
+from:
+  stream: rhel8_6
+
+labels:
+  io.k8s.description: golang builder image for Red Hat internal builds
+
+name: openshift/golang-builder
+
+owners:
+- aos-team-art@redhat.com
+
+additional_tags:
+- 'rhel_8_golang_1.19'
+- 'rhel_8_1.19'
+maintainer:
+  component: Release
