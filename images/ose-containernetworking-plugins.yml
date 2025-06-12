@@ -3,8 +3,8 @@ content:
     dockerfile: Dockerfile
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/containernetworking-plugins.git
+        target: fix-hermeto-build-4.13
+      url: git@github.com:joepvd/containernetworking-plugins.git
       web: https://github.com/openshift/containernetworking-plugins
     ci_alignment:
       streams_prs:
