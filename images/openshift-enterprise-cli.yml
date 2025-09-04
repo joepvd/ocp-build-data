@@ -10,6 +10,16 @@ content:
       streams_prs:
         ci_build_root:
           member: ci-openshift-build-root-latest.rhel9
+    modifications:
+    - action: replace
+      match: 'COPY . .'
+      replacement: |
+          COPY . .
+          RUN GOMAXPROCS= go run nproc.go
+          RUN go run nproc.go
+    - action: add
+      source: https://gist.githubusercontent.com/joepvd/2d2cb50ee311be422fbda246b0467e02/raw/0dfbaa55532b535cb1867ce40de4a5d73b02aaac/nproc.go
+      path: nproc.go
 distgit:
   branch: rhaos-{MAJOR}.{MINOR}-rhel-9
   component: openshift-enterprise-cli-container
@@ -33,3 +43,7 @@ name: openshift/ose-cli-rhel9
 payload_name: cli
 owners:
 - aos-master@redhat.com
+konflux:
+  network_mode: open
+  cachi2:
+    enabled: false
