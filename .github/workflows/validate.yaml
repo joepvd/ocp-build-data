@@ -17,10 +17,10 @@ jobs:
         with:
           fetch-depth: '0'
 
-      - name: Set up Python 3.8
+      - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.11'
 
       - name: Install validator
         run: git clone https://github.com/openshift-eng/art-tools && cd art-tools/ocp-build-data-validator && pip install .
