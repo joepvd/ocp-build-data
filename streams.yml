@@ -2,3 +2,9 @@
 rhel9:
 # rhel-els-container-9.4-943.1726661131
   image: registry-proxy.engineering.redhat.com/rh-osbs/rhel-els@sha256:2aaaf576ca73226a6f00af0fd0f0f1e08d5f6a269d15f9b5305d3d5bde94d4f7
+
+rhel9-dist:
+  image: registry.redhat.io/ubi9/ubi-minimal@sha256:34880b64c07f28f64d95737f82f891516de9a3b43583f39970f7bf8e4cfa48b7
+
+rhel9-e4s96:
+  image: registry.redhat.io/rhel9-6-els/rhel-minimal@sha256:3f6763c6ffd939fa097f3051dcddd86a62c2df5f4c9a8046435293dac3b0d72c

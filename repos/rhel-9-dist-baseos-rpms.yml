@@ -1,0 +1,17 @@
+- conf:
+    baseurl:
+      aarch64: https://rhsm-pulp.corp.redhat.com/content/dist/rhel9/9/aarch64/baseos/os/
+      ppc64le: https://rhsm-pulp.corp.redhat.com/content/dist/rhel9/9/ppc64le/baseos/os/
+      s390x: https://rhsm-pulp.corp.redhat.com/content/dist/rhel9/9/s390x/baseos/os/
+      x86_64: https://rhsm-pulp.corp.redhat.com/content/dist/rhel9/9/x86_64/baseos/os/
+    extra_options:
+      module_hotfixes: 1
+  content_set:
+    default: rhel-9-for-x86_64-baseos-rpms
+    aarch64: rhel-9-for-aarch64-baseos-rpms
+    ppc64le: rhel-9-for-ppc64le-baseos-rpms
+    s390x: rhel-9-for-s390x-baseos-rpms
+  name: rhel-9-dist-baseos-rpms
+  reposync:
+    enabled: false
+  type: external
