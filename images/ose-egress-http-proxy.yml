@@ -32,5 +32,4 @@ konflux:
   cachi2:
     lockfile:
       modules:
-      - perl
       - squid
