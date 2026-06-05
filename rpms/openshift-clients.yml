@@ -2,8 +2,8 @@ content:
   source:
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
-      url: git@github.com:openshift-priv/oc.git
+        target: fix-windows-builds
+      url: git@github.com:joepvd/oc.git
       web: https://github.com/openshift/oc
     specfile: oc.spec
 name: openshift-clients
