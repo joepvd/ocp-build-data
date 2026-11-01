@@ -3,9 +3,10 @@ content:
     dockerfile: Dockerfile.product
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
+        target: OCPBUGS-135099
       url: git@github.com:openshift-priv/console.git
       web: https://github.com/openshift/console
+      url_pull: https://github.com/kchawlani19/console.git
     pkg_managers:
     - yarn
 cachito:
