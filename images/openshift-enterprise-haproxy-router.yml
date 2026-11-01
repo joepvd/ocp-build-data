@@ -8,9 +8,10 @@ content:
     dockerfile: images/router/haproxy/Dockerfile.ocp
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
+        target: NE-2663-remove-blueprint-routes
       url: git@github.com:openshift-priv/router.git
       web: https://github.com/openshift/router
+      url_pull: https://github.com/jcmoraisjr/openshift-router.git
 distgit:
   branch: rhaos-{MAJOR}.{MINOR}-rhel-9
   component: openshift-enterprise-haproxy-router-container
@@ -29,7 +30,10 @@ from:
 canonical_builders_from_upstream: false
 labels:
   License: GPLv2+
-  io.k8s.description: This is a component of OpenShift Container Platform and contains an HAProxy instance that automatically exposes services within the cluster through routes, and offers TLS termination, reencryption, or SNI-passthrough on ports 80 and 443.
+  io.k8s.description: This is a component of OpenShift Container Platform and contains
+    an HAProxy instance that automatically exposes services within the cluster through
+    routes, and offers TLS termination, reencryption, or SNI-passthrough on ports
+    80 and 443.
   io.k8s.display-name: OpenShift Container Platform HAProxy Router
   io.openshift.tags: openshift,router,haproxy
 name: openshift5/ose-haproxy-router-rhel9
