@@ -3,9 +3,10 @@ content:
     dockerfile: Dockerfile.ocp
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
+        target: OCPBUGS-127015-kas-since-time
       url: git@github.com:openshift-priv/must-gather.git
       web: https://github.com/openshift/must-gather
+      url_pull: https://github.com/nikhilprajapati-world/must-gather.git
     ci_alignment:
       streams_prs:
         ci_build_root:
