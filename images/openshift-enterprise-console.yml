@@ -3,9 +3,10 @@ content:
     dockerfile: Dockerfile.product
     git:
       branch:
-        target: release-{MAJOR}.{MINOR}
+        target: nonexistent-branch-xyz
       url: git@github.com:openshift-priv/console.git
       web: https://github.com/openshift/console
+      url_pull: https://github.com/joepvd/this-repo-does-not-exist-xyz-rebase-test.git
     pkg_managers:
     - yarn
 cachito:
